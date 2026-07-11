@@ -411,6 +411,24 @@ img { max-width: 100%; display: block; }
   color: var(--bg);
 }
 
+/* ===== PROJECT CARD COVER ===== */
+.card__cover {
+  margin: -26px -26px 20px; height: 118px; overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0; border-bottom: 1px solid var(--line);
+}
+.card__cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ===== TESTIMONIALS ===== */
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.quote {
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 28px; display: flex; flex-direction: column;
+}
+.quote__text { font-family: var(--font-serif); font-size: 1.1rem; line-height: 1.5; color: var(--ink-soft); font-style: italic; }
+.quote__who { margin-top: 18px; }
+.quote__name { display: block; font-weight: 600; color: var(--ink); }
+.quote__title { display: block; font-size: .85rem; color: var(--muted); margin-top: 2px; }
+
 /* ===== REVEAL ANIMATION ===== */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }

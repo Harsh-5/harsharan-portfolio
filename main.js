@@ -86,6 +86,14 @@
     data.forEach((p) => {
       const card = el("div", "card reveal");
       card.dataset.type = p.type;
+      if (p.image) {
+        const cov = el("div", "card__cover");
+        const im = el("img");
+        im.src = p.image; im.alt = ""; im.loading = "lazy"; im.setAttribute("aria-hidden", "true");
+        im.addEventListener("error", () => cov.remove());
+        cov.appendChild(im);
+        card.appendChild(cov);
+      }
       const top = el("div", "card__top");
       top.appendChild(el("span", "card__tag card__tag--" + p.type, p.type === "work" ? "Work" : "Personal"));
       top.appendChild(el("span", "card__icon", p.icon || "•"));
@@ -157,6 +165,7 @@
       { label: "✉  Email me", url: "mailto:" + p.email, primary: true },
       { label: "in  LinkedIn", url: p.linkedin },
       { label: "</>  GitHub", url: p.github },
+      { label: "📊  Tableau", url: p.tableau },
     ];
     links.forEach((l) => {
       if (!l.url) return;
@@ -203,6 +212,25 @@
 
     const pr = $("#aiPrinciple");
     if (pr && b.principle) pr.textContent = b.principle;
+  }
+
+  /* ---------- Testimonials (section stays hidden unless quotes exist) ---------- */
+  function testimonials() {
+    const sec = $("#testimonials"), grid = $("#quotesGrid");
+    if (!sec || !grid) return;
+    const list = (D.testimonials || []).filter((t) => t && t.quote);
+    if (!list.length) return;
+    sec.hidden = false;
+    list.forEach((t) => {
+      const q = el("div", "quote reveal");
+      q.appendChild(el("p", "quote__text", "&ldquo;" + esc(t.quote) + "&rdquo;"));
+      const who = el("div", "quote__who");
+      who.appendChild(el("span", "quote__name", esc(t.name || "")));
+      const meta = [t.title, t.relation].filter(Boolean).map(esc).join(" · ");
+      if (meta) who.appendChild(el("span", "quote__title", meta));
+      q.appendChild(who);
+      grid.appendChild(q);
+    });
   }
 
   /* ---------- Nav: scroll state, mobile menu ---------- */
@@ -252,7 +280,7 @@
   /* ---------- Init ---------- */
   document.addEventListener("DOMContentLoaded", () => {
     profileBits(); strengths(); experience(); projects(); skills();
-    education(); beyond(); buildWithAI(); contact();
+    education(); beyond(); testimonials(); buildWithAI(); contact();
     nav(); theme(); reveal();
   });
 })();

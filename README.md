@@ -104,6 +104,30 @@ about a minute.
 
 ---
 
+## Optional extras
+
+- **Testimonials:** add objects to `testimonials:` in `data.js`. The section stays
+  hidden until at least one quote exists, then appears automatically.
+- **Project covers & links:** each project supports `image:` (a cover graphic in
+  `assets/`) and `links:` (GitHub repo, live demo, etc.). Swap in a real screenshot
+  anytime by pointing `image` at your own file.
+- **Social preview:** `og-image.png` is what shows when you share the link on
+  LinkedIn. Regenerate/replace it and keep the same filename.
+- **Analytics:** to see if recruiters open your site, sign up (free) at
+  goatcounter.com and uncomment the snippet at the bottom of `index.html`.
+
+## Custom domain (optional)
+
+1. Buy a domain (e.g. `harsharangorli.com`) from a registrar like Namecheap,
+   Cloudflare, or Porkbun (~$10–12/yr).
+2. In your repo: **Settings → Pages → Custom domain**, enter the domain, Save.
+   GitHub creates a `CNAME` file for you.
+3. At your registrar's DNS settings, add these records:
+   - Four `A` records for the apex domain → `185.199.108.153`, `185.199.109.153`,
+     `185.199.110.153`, `185.199.111.153`
+   - One `CNAME` record for `www` → `harsh-5.github.io`
+4. Back in GitHub Pages, tick **Enforce HTTPS** once it's available (~1 hour).
+
 ## Local preview
 Double-click `index.html` to open it in your browser, or run a tiny local server
 from this folder:

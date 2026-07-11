@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid slice">
+<rect width="600" height="240" fill="#FBEEE7"/>
+<g transform="translate(50,30)">
+<polyline points="0,150 80,120 160,140 240,70 320,95 400,30 500,55" fill="none" stroke="#D8613C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,175 80,165 160,170 240,135 320,150 400,120 500,130" fill="none" stroke="#E39A3B" stroke-width="4" stroke-opacity=".7" stroke-linecap="round" stroke-dasharray="2 10"/>
+<g fill="#D8613C"><circle cx="240" cy="70" r="7"/><circle cx="400" cy="30" r="7"/></g>
+</g></svg>

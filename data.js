@@ -14,6 +14,7 @@ const PORTFOLIO = {
     email:    "harsharan.2308@gmail.com",
     linkedin: "https://www.linkedin.com/in/harsharan-preet/",
     github:   "https://github.com/Harsh-5",
+    tableau:  "https://public.tableau.com/app/profile/harsharan.preet.k.gorli",
     location: "Arlington, VA",
     // Put your résumé PDF in this folder and keep this filename, or change it:
     resume:   "Harsharan_Gorli_Resume.pdf",
@@ -93,12 +94,15 @@ const PORTFOLIO = {
     },
   ],
 
-  /* ---- Projects — mix of work & personal. type: "work" | "personal" ---- */
+  /* ---- Projects — mix of work & personal. type: "work" | "personal"
+         image  = optional cover graphic (…) shown at top of the card
+         links  = [{ label, url }]  (e.g. GitHub repo or a live demo) ---- */
   projects: [
     {
       title: "Centralized Grant Compliance Data Hub",
       type: "work",
       icon: "🗂️",
+      image: "cover-bars.svg",
       date: "2023 – Present",
       blurb: "An end-to-end analytics ecosystem unifying KPI data from 40+ Goodwill sites into a Microsoft Fabric Lakehouse, feeding audited Power BI dashboards that 8+ mission teams use to track placements, benefits, and grant compliance in real time.",
       stack: ["Microsoft Fabric", "PySpark", "Power BI", "DAX", "SQL"],
@@ -108,6 +112,7 @@ const PORTFOLIO = {
       title: "ESG Impact-Investing ML Model",
       type: "work",
       icon: "📈",
+      image: "cover-line.svg",
       date: "2022",
       blurb: "A machine-learning ranking and forecasting model for ESG portfolios that beat industry benchmarks by 103% over a 10-year backtest, paired with an NLP sentiment pipeline scanning 250+ firms for socially impactful, financially sound bets.",
       stack: ["Python", "XGBoost", "scikit-learn", "TextBlob", "NLTK"],
@@ -117,33 +122,70 @@ const PORTFOLIO = {
       title: "WWF Species Recommendation Engine",
       type: "work",
       icon: "🐾",
+      image: "cover-network.svg",
       date: "2022",
       blurb: "Three collaborative-filtering recommendation models built on web-scraped data from 250+ species pages to personalize content and lift visitor retention by 20% for the World Wildlife Fund's digital platform.",
       stack: ["Python", "h2o", "surprise", "BeautifulSoup"],
       links: [],
     },
     {
+      title: "COVID-19 Analysis & Tableau Dashboard",
+      type: "personal",
+      icon: "🦠",
+      image: "cover-bars.svg",
+      date: "2021 – 2022",
+      blurb: "Wrangled the JHU COVID-19 time-series dataset (Spark SQL, regression analysis) and built an interactive Tableau dashboard to make the trends explorable — a full path from raw data to a decision-ready, public-facing visualization.",
+      stack: ["Tableau", "Spark SQL", "Python", "AWS"],
+      links: [
+        { label: "Live dashboard", url: "https://public.tableau.com/app/profile/harsharan.preet.k.gorli/viz/CovidDashboard_16732186317930/Dashboard1" },
+        { label: "GitHub", url: "https://github.com/Harsh-5/wrangled-and-analyzed-COVID-19-data" },
+      ],
+    },
+    {
+      title: "Bias-Aware Credit Approval Model",
+      type: "personal",
+      icon: "⚖️",
+      image: "cover-line.svg",
+      date: "2022",
+      blurb: "Investigated the encoded factors driving credit-approval decisions and built a predictive model tuned for fairness — reaching ~99% bias-free performance while staying accurate. A hands-on study in responsible, auditable ML.",
+      stack: ["Python", "scikit-learn", "Fairness", "Explainability"],
+      links: [{ label: "GitHub", url: "https://github.com/Harsh-5/Credit_Line_Increase" }],
+    },
+    {
+      title: "Responsible & Explainable ML",
+      type: "personal",
+      icon: "🔍",
+      image: "cover-ai.svg",
+      date: "2022",
+      blurb: "A collection of work on interpretable and responsible machine learning — model explainability, bias detection, and transparent decision-making. The foundation for how I now think about guardrails in AI systems.",
+      stack: ["Python", "Interpretable ML", "SHAP", "Jupyter"],
+      links: [{ label: "GitHub", url: "https://github.com/Harsh-5/Responsible-Machine-Learning" }],
+    },
+    {
+      title: "California Test Scores — R / Shiny App",
+      type: "personal",
+      icon: "📊",
+      image: "cover-network.svg",
+      date: "2022",
+      blurb: "An interactive R Shiny web app for exploring California school test-score data — letting users filter, visualize, and draw their own insights instead of reading a static report.",
+      stack: ["R", "Shiny", "ggplot2"],
+      links: [{ label: "GitHub", url: "https://github.com/Harsh-5/California-Test-Scores-R-Shiny-App" }],
+    },
+    {
       title: "NLP Text Summarization (BERT · GPT-2 · XLNet)",
       type: "personal",
       icon: "📝",
+      image: "cover-ai.svg",
       date: "Nov 2022",
       blurb: "Implemented and compared transformer models (BERT, GPT-2, XLNet) to summarize long documents and extract key information — an early hands-on dive into the LLM techniques I'm now building on in my Agentic AI work.",
       stack: ["Python", "Transformers", "Google Colab"],
-      links: [{ label: "GitHub", url: "https://github.com/Harsh-5" }],
-    },
-    {
-      title: "Dimensional Modeling of COVID-19 Data",
-      type: "personal",
-      icon: "🦠",
-      date: "Dec 2021",
-      blurb: "Wrangled and modeled the JHU COVID-19 time-series dataset, running regression analysis and building visualizations to surface actionable public-health insights at scale using a Spark SQL + AWS stack.",
-      stack: ["Spark SQL", "AWS", "Python"],
-      links: [{ label: "GitHub", url: "https://github.com/Harsh-5" }],
+      links: [],
     },
     {
       title: "Agentic AI — RAG & Guardrails (In Progress)",
       type: "personal",
       icon: "🤖",
+      image: "cover-ai.svg",
       date: "2025 – Present",
       blurb: "Currently in an Agentic AI bootcamp building production-minded LLM apps: retrieval-augmented generation, agent and tool design, evaluation, and safety guardrails. Project write-ups coming soon.",
       stack: ["RAG", "LLMs", "Agents", "Evaluation", "Guardrails"],
@@ -233,7 +275,7 @@ const PORTFOLIO = {
     // Honest estimate — swap in real numbers if you have them.
     stats: [
       { value: "1", label: "focused session, start to deployable" },
-      { value: "~$1–2", label: "estimated model cost (replace with your real figure)" },
+      { value: "~$1–2", label: "estimated model cost for the whole build" },
       { value: "≈5 lines", label: "to add a future job — not a rebuild" },
     ],
 
@@ -254,6 +296,27 @@ const PORTFOLIO = {
     principle:
       "The bigger principle: efficiency isn't using less AI — it's using the right AI. My master's was in machine learning and AI, so I know when a regression, a gradient-boosted model, or a recommender will be cheaper, faster, and more reliable than a large language model — and when an LLM or agent genuinely earns its cost. Knowing the difference is the part that's hard to fake.",
   },
+
+  /* ---- Testimonials / recommendations ----
+     This section only appears on the site when the list below is NOT empty.
+     To add one, copy the example object, fill it in, and save. Great sources:
+     a LinkedIn recommendation, or a quick line from a manager or teammate.
+     { quote: "…", name: "Jane Doe", title: "Program Director, Goodwill", relation: "Manager" }
+  */
+  testimonials: [
+    {
+      quote: "Harsharan consistently impressed me with her analytical skills, attention to detail, and dedication. She's not only a great team player but a proactive problem solver — a valuable asset to any organization looking for a data-driven professional.",
+      name: "Zaurez Hamid",
+      title: "Service Operations Specialist & Analyst, Schneider Electric",
+      relation: "MS Business Analytics classmate, GWU",
+    },
+    {
+      quote: "Harsharan consistently gave 100 percent to the team and had a knack for keeping everyone calm and productive during intense crunch periods. Her ability to overcome challenges with a smile made her stand out a cut above the rest. Any team would be lucky to have her.",
+      name: "Dhanya K",
+      title: "AVP, Credit Risk Analysis, Swiss Re",
+      relation: "Worked with Harsharan on the same team",
+    },
+  ],
 };
 
 // Expose to the renderer (do not remove this line).
