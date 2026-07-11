@@ -132,7 +132,8 @@ const PORTFOLIO = {
       title: "COVID-19 Analysis & Tableau Dashboard",
       type: "personal",
       icon: "🦠",
-      image: "cover-bars.svg",
+      // Real screenshot of the live dashboard, hosted by Tableau Public.
+      image: "https://public.tableau.com/static/images/Co/CovidDashboard_16732186317930/Dashboard1/1.png",
       date: "2021 – 2022",
       blurb: "Wrangled the JHU COVID-19 time-series dataset (Spark SQL, regression analysis) and built an interactive Tableau dashboard to make the trends explorable — a full path from raw data to a decision-ready, public-facing visualization.",
       stack: ["Tableau", "Spark SQL", "Python", "AWS"],
