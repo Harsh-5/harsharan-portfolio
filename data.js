@@ -99,6 +99,16 @@ const PORTFOLIO = {
          links  = [{ label, url }]  (e.g. GitHub repo or a live demo) ---- */
   projects: [
     {
+      title: "Grant Compliance Copilot — Agentic RAG",
+      type: "personal",
+      icon: "🛡️",
+      image: "cover-ai.svg",
+      date: "2026",
+      blurb: "An agentic RAG system that answers grant-compliance questions from policy documents with enforced citations, plus a deterministic rules engine that audits participant data — every finding tagged to the exact clause it violates, so the output is audit-defensible. Deliberately runs with zero API keys: TF-IDF retrieval scores 100% recall@1 on the eval set, so an expensive model isn't used where it hasn't earned its cost.",
+      stack: ["Python", "RAG", "Guardrails", "Evals", "pandas", "scikit-learn"],
+      links: [{ label: "GitHub", url: "https://github.com/Harsh-5/grant-compliance-copilot" }],
+    },
+    {
       title: "Centralized Grant Compliance Data Hub",
       type: "work",
       icon: "🗂️",
