@@ -306,7 +306,7 @@ img { max-width: 100%; display: block; }
 .lang-list .dot.on { background: var(--accent); }
 
 /* ===== CONTACT ===== */
-.section--contact { background: var(--ink); color: var(--bg); max-width: none; text-align: center; }
+.section--contact { --bg: #FBF7F1; background: var(--ink); color: var(--bg); max-width: none; text-align: center; }
 [data-theme="dark"] .section--contact { background: #0E0C09; }
 .contact { max-width: 680px; margin: 0 auto; padding: 0 24px; }
 .section--contact .kicker { color: var(--accent-2); }
@@ -362,6 +362,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== HOW I BUILT THIS WITH AI ===== */
 .section--ai {
+  --bg: #FBF7F1; /* force light text on this always-dark section (both themes) */
   background: var(--ink); color: var(--bg); max-width: none; overflow: hidden; position: relative;
 }
 [data-theme="dark"] .section--ai { background: #0E0C09; }
