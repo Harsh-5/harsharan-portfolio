@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsharan Gorli — Data Analyst & Applied ML Engineer</title>
+  <meta name="description" content="Harsharan Gorli — Data Analyst, Compliance Specialist, and Applied ML / Agentic AI engineer. Building analytics ecosystems that turn complex data into decisions." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Harsharan Gorli — Data Analyst & Applied ML Engineer" />
+  <meta property="og:description" content="Building analytics ecosystems that turn complex data into real-time decisions, compliance, and impact." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: clean sans + techy monospace -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand"><span class="mono">~/</span>harsharan</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#beyond">Beyond Work</a>
+        <a href="#built-with-ai" class="nav__ai"><span class="nav__ai-dot"></span>How I Built This With AI</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-toggle__icon">◐</span>
+        </button>
+        <button id="navToggle" class="nav__burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow mono">// Data Analyst · Applied ML · building with AI, efficiently</p>
+          <h1 class="hero__name">Harsharan&nbsp;Gorli</h1>
+          <p class="hero__tagline">
+            I turn complex, messy data into
+            <span class="hl">real-time decisions, airtight compliance, and measurable impact</span>
+            — and I build with AI, deliberately and efficiently.
+          </p>
+          <p class="hero__sub">
+            4+ years across nonprofit, finance, and tech, with a master's focused on machine
+            learning &amp; AI. I know the stack bottom-up — so I reach for classic ML when it's
+            cheaper and sharper, and LLMs or agents only when they earn their cost.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+            <a class="btn btn--ghost" id="resumeLink" href="#" download>Download résumé</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>4+</strong><span>years in analytics</span></li>
+            <li><strong>40+</strong><span>partner sites supported</span></li>
+            <li><strong>16</strong><span>grant programs standardized</span></li>
+            <li><strong>6</strong><span>languages spoken</span></li>
+          </ul>
+        </div>
+        <div class="hero__photo">
+          <div class="photo-frame">
+            <img id="profilePhoto" src="profile.jpg" alt="Harsharan Gorli" />
+            <div class="photo-fallback" aria-hidden="true">HG</div>
+          </div>
+          <div class="photo-badge mono">📍 Arlington, VA</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <p class="kicker mono">01 — About</p>
+        <h2>Turning data into decisions people actually trust</h2>
+      </div>
+      <div class="about">
+        <div class="about__lead">
+          <p>
+            I'm a data analyst and compliance specialist who likes the unglamorous part of
+            data work: making it <em>correct</em>, <em>consistent</em>, and <em>usable</em> by
+            people who aren't analysts. My favorite problems live at the intersection of
+            engineering, governance, and storytelling — building the pipeline, locking down
+            the quality, and then making the dashboard so clear that leadership can act in a
+            meeting instead of a follow-up.
+          </p>
+          <p>
+            My path is intentionally cross-disciplinary. A B.Tech in Computer Science gave me
+            the engineering foundation; an M.S. in Business Analytics taught me to tie models
+            to business value; and roles across a national nonprofit, an impact-investing fund,
+            a conservation org, and a PayPal-incubated startup taught me that the same skill —
+            <strong>making data trustworthy and legible</strong> — creates value everywhere.
+          </p>
+          <p>
+            Right now I'm in an Agentic AI bootcamp, going hands-on with RAG, agent and tool
+            design, evaluation, and guardrails for production LLM apps — because the next
+            chapter of analytics is conversational, and I want to build it responsibly.
+          </p>
+        </div>
+        <aside class="about__card">
+          <h3 class="mono">What I'm great at</h3>
+          <ul class="ticks" id="strengthsList"><!-- injected --></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section section--alt">
+      <div class="section__head">
+        <p class="kicker mono">02 — Experience</p>
+        <h2>Where I've made an impact</h2>
+      </div>
+      <div class="timeline" id="timeline"><!-- injected --></div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <p class="kicker mono">03 — Projects</p>
+        <h2>Things I've built</h2>
+        <p class="section__intro">A mix of professional work and personal builds. Filter by what you care about.</p>
+      </div>
+      <div class="filters" id="projectFilters"><!-- injected --></div>
+      <div class="cards" id="projectGrid"><!-- injected --></div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section--alt">
+      <div class="section__head">
+        <p class="kicker mono">04 — Skills &amp; Tools</p>
+        <h2>My toolkit</h2>
+      </div>
+      <div class="skills" id="skillsGrid"><!-- injected --></div>
+      <div class="certs">
+        <h3 class="mono">Certifications</h3>
+        <ul class="cert-list" id="certList"><!-- injected --></ul>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section section--alt">
+      <div class="section__head">
+        <p class="kicker mono">05 — Education</p>
+        <h2>Foundations — engineering up, AI throughout</h2>
+      </div>
+      <div class="edu" id="eduList"><!-- injected --></div>
+    </section>
+
+    <!-- ===== BEYOND WORK ===== -->
+    <section id="beyond" class="section">
+      <div class="section__head">
+        <p class="kicker mono">06 — Beyond Work</p>
+        <h2>The person behind the dashboards</h2>
+        <p class="section__intro">
+          I believe the best teammates are whole people. Here's what I care about when I close the laptop.
+        </p>
+      </div>
+      <div class="beyond">
+        <div class="interests" id="interestsGrid"><!-- injected --></div>
+        <div class="beyond__side">
+          <div class="panel">
+            <h3 class="mono">Languages</h3>
+            <ul class="lang-list" id="langList"><!-- injected --></ul>
+          </div>
+          <div class="panel">
+            <h3 class="mono">Communities</h3>
+            <ul class="ticks" id="communityList"><!-- injected --></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW I BUILT THIS WITH AI ===== -->
+    <section id="built-with-ai" class="section section--ai">
+      <div class="ai-wrap">
+        <div class="section__head">
+          <p class="kicker mono">07 — The meta layer</p>
+          <h2>How I built this site with AI</h2>
+          <p class="section__intro" id="aiIntro"><!-- injected --></p>
+        </div>
+
+        <div class="ai-stats" id="aiStats"><!-- injected --></div>
+
+        <div class="ai-cols">
+          <div class="ai-col">
+            <h3 class="mono"><span class="ai-col__icon">⚡</span> How I kept it efficient</h3>
+            <ul class="ai-points" id="aiEfficiency"><!-- injected --></ul>
+          </div>
+          <div class="ai-col">
+            <h3 class="mono"><span class="ai-col__icon">🔁</span> What I'd do differently next time</h3>
+            <ul class="ai-points ai-points--alt" id="aiImprovements"><!-- injected --></ul>
+          </div>
+        </div>
+
+        <div class="ai-principle" id="aiPrinciple"><!-- injected --></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--contact">
+      <div class="contact">
+        <p class="kicker mono">08 — Contact</p>
+        <h2>Let's build something that matters</h2>
+        <p class="contact__lead">
+          I'm open to data analytics, analytics engineering, and applied-ML roles.
+          The fastest way to reach me is email — I read everything.
+        </p>
+        <div class="contact__links" id="contactLinks"><!-- injected --></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">Designed &amp; built by Harsharan Gorli · <span id="year"></span></p>
+    <p class="footer__note mono">Made to grow — new roles &amp; projects added as the journey continues.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
